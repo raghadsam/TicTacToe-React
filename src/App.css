@@ -8,6 +8,11 @@ body {
   background-color: #131a28;
 }
 
+.font-link {
+  font-family: "Manrope", sans-serif;
+  font-weight: bolder;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

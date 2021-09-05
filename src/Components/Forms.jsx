@@ -22,7 +22,7 @@ export default function Forms() {
   };
 
   return (
-    <div id="enterNames">
+    <div id="enterNames" className="font-link">
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 col-11">
           <Form.Label>Please enter the name of the first player:</Form.Label>
@@ -30,6 +30,7 @@ export default function Forms() {
             type="text"
             placeholder="First Player"
             onChange={(e) => setFirst(e.target.value)}
+            required
           />
         </Form.Group>
 
@@ -39,6 +40,7 @@ export default function Forms() {
             type="text"
             placeholder="Second Player"
             onChange={(e) => setSecond(e.target.value)}
+            required
           />
         </Form.Group>
 

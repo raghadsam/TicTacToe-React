@@ -10,7 +10,6 @@ import image7 from "./images/7.png";
 import image8 from "./images/8.png";
 import image9 from "./images/9.png";
 import image10 from "./images/10.png";
-//import yang from "./images/ying-yang.png";
 export default function Background() {
   return (
     <div>
@@ -27,12 +26,10 @@ export default function Background() {
           8: image9,
           9: image10,
         }}
-        how={
-          50
-        } /* Pass the number of images Sky will render chosing randomly */
-        time={8} /* time of animation */
-        size={"90px"} /* size of the rendered images */
-        background={"#131a28"} /* color of background */
+        how={50}
+        time={8}
+        size={"90px"}
+        background={"#131a28"}
       />
     </div>
   );
