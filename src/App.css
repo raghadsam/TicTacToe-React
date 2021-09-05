@@ -46,10 +46,6 @@ code {
   color: #1cdbf5;
 }
 
-.fc-white {
-  color: white;
-}
-
 .fw-600 {
   font-weight: bolder;
 }
@@ -81,9 +77,13 @@ code {
   border-right: 15px solid #1cdbf5;
 }
 
-.clear-button {
+#button {
   width: max-content;
   margin: 40px auto 10px auto;
+  background-color: #749cf1;
+  border-color: #749cf1;
+  color: black;
+  border-radius: 0.25rem;
 }
 
 #enterNames {
@@ -129,8 +129,12 @@ code {
     border-right: 10px solid #1cdbf5;
   }
 
-  .clear-button {
+  #button {
     width: max-content;
     margin: 40px auto 10px auto;
+    background-color: #749cf1;
+    border-color: #749cf1;
+    color: black;
+    border-radius: 0.25rem;
   }
 }

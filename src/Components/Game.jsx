@@ -1,24 +1,28 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import Squares from "./Squares";
-
+import { useLocation } from "react-router-dom";
 const initialState = ["", "", "", "", "", "", "", "", ""];
 
 export default function Game() {
   const [game, setGame] = useState(initialState);
-  const [X, setX] = useState(false);
+  const [O, setO] = useState(false);
+  const names = useLocation();
 
   const handleClick = (index) => {
     let strings = Array.from(game);
-    strings[index] = X ? "X" : "0";
+    strings[index] = O ? "O" : "X";
     setGame(strings);
-    setX(!X);
+    setO(!O);
   };
 
   useEffect(() => {
     const winner = isWinner();
-    if (winner) {
-      alert(`Ta Da ! ${winner} has won the game !`);
+    if (winner === "X") {
+      alert(`Ta Da ! ${names.state.firstPlayer} has won the game !`);
+      setGame(initialState);
+    } else if (winner === "O") {
+      alert(`Ta Da ! ${names.state.secondPlayer} has won the game !`);
       setGame(initialState);
     }
   }, [game]);
@@ -42,6 +46,7 @@ export default function Game() {
     }
     return null;
   };
+
   return (
     <div className="app-header">
       <p className="heading-text">React Tic Tac Toe</p>
@@ -92,10 +97,11 @@ export default function Game() {
         />
         <Squares state={game[8]} onClick={() => handleClick(8)} />
       </div>
-      <button className="clear-button" onClick={() => setGame(initialState)}>
-        Clear Game
+      <button id="button" onClick={() => setGame(initialState)}>
+        Reset Game
       </button>
-      <p className="fc-aqua fw-600">Raghad</p>
+      <br />
+      <div className="fc-aqua fw-600">Raghad Al Samrout</div>
     </div>
   );
 }
