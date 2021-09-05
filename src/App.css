@@ -7,18 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -44,12 +32,11 @@ code {
 }
 
 .square {
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 200px;
+  min-height: 200px;
   font-size: 64px;
   text-align: center;
   color: #1cdbf5;
-  border-color: red;
   font-weight: bolder;
   padding: 30px;
 }
@@ -108,8 +95,8 @@ code {
   }
 
   .square {
-    min-width: 80px;
-    min-height: 80px;
+    min-width: 160px;
+    min-height: 160px;
     font-size: 32px;
     font-weight: bolder;
     padding: 15px;
