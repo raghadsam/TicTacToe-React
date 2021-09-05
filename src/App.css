@@ -7,6 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -54,7 +66,7 @@ code {
   font-weight: bolder;
 }
 
-.row {
+.rows {
   display: flex;
   flex-direction: row;
 }
@@ -64,7 +76,7 @@ code {
   flex-direction: column;
 }
 
-.jc-center {
+.jc-Center {
   justify-content: center;
 }
 

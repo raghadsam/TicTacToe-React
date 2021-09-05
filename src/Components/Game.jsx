@@ -45,7 +45,7 @@ export default function Game() {
   return (
     <div className="app-header">
       <p className="heading-text">React Tic Tac Toe</p>
-      <div className="row jc-center">
+      <div className="rows jc-Center">
         <Squares
           className="b-bottom-right"
           state={game[0]}
@@ -62,7 +62,7 @@ export default function Game() {
           onClick={() => handleClick(2)}
         />
       </div>
-      <div className="row jc-center">
+      <div className="rows jc-Center">
         <Squares
           className="b-bottom-right"
           state={game[3]}
@@ -79,7 +79,7 @@ export default function Game() {
           onClick={() => handleClick(5)}
         />
       </div>
-      <div className="row jc-center">
+      <div className="rows jc-Center">
         <Squares
           className="b-right"
           state={game[6]}
