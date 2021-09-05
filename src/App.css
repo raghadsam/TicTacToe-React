@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #131a28;
 }
 
 code {
@@ -85,6 +86,16 @@ code {
   margin: 40px auto 10px auto;
 }
 
+#enterNames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  font-size: 19px;
+  color: white;
+}
 @media only screen and (max-width: 600px) {
   .heading-text {
     color: white;
