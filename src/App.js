@@ -6,13 +6,13 @@ const initialState = ["", "", "", "", "", "", "", "", ""];
 
 function App() {
   const [game, setGame] = useState(initialState);
-  const [X, setX] = useState(false);
+  const [O, setO] = useState(false);
 
   const handleClick = (index) => {
     let strings = Array.from(game);
-    strings[index] = X ? "X" : "0";
+    strings[index] = O ? "O" : "X";
     setGame(strings);
-    setX(!X);
+    setO(!O);
   };
 
   useEffect(() => {
