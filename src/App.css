@@ -34,7 +34,7 @@ code {
   font-size: 42px;
   font-weight: bolder;
   text-align: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 .square {
@@ -82,13 +82,23 @@ code {
   border-right: 15px solid #1cdbf5;
 }
 
-#button {
+#resetButton {
+  width: max-content;
+  margin: 25px auto 10px auto;
+  background-color: #749cf1;
+  border-color: #749cf1;
+  color: black;
+  border-radius: 0.25rem;
+  font-weight: bolder;
+}
+#submitButton {
   width: max-content;
   margin: 40px auto 10px auto;
   background-color: #749cf1;
   border-color: #749cf1;
   color: black;
   border-radius: 0.25rem;
+  font-weight: bolder;
 }
 
 #enterNames {
@@ -107,12 +117,12 @@ code {
     font-size: 30px;
     font-weight: bolder;
     text-align: center;
-    margin: 60px 10px;
+    margin: 30px;
   }
 
   .square {
-    min-width: 160px;
-    min-height: 160px;
+    min-width: 170px;
+    min-height: 170px;
     font-size: 32px;
     font-weight: bolder;
     padding: 15px;
@@ -141,5 +151,6 @@ code {
     border-color: #749cf1;
     color: black;
     border-radius: 0.25rem;
+    font-weight: bolder;
   }
 }

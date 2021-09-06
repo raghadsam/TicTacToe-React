@@ -22,7 +22,7 @@ export default function Forms() {
   };
 
   return (
-    <div id="enterNames" className="font-link">
+    <div id="enterNames">
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 col-11">
           <Form.Label>Please enter the name of the first player:</Form.Label>
@@ -44,7 +44,7 @@ export default function Forms() {
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit" id="button">
+        <Button variant="primary" type="submit" id="submitButton">
           Submit
         </Button>
       </Form>

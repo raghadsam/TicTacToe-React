@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import Squares from "./Squares";
 import { useLocation } from "react-router-dom";
+import Alert from "./Alert";
+
 const initialState = ["", "", "", "", "", "", "", "", ""];
 
 export default function Game() {
@@ -14,12 +16,16 @@ export default function Game() {
     strings[index] = O ? "O" : "X";
     setGame(strings);
     setO(!O);
+    console.log(O);
   };
 
   useEffect(() => {
     const winner = isWinner();
     if (winner === "X") {
       alert(`Ta Da ! ${names.state.firstPlayer} has won the game !`);
+
+      setO(false);
+
       setGame(initialState);
     } else if (winner === "O") {
       alert(`Ta Da ! ${names.state.secondPlayer} has won the game !`);
@@ -97,10 +103,15 @@ export default function Game() {
         />
         <Squares state={game[8]} onClick={() => handleClick(8)} />
       </div>
-      <button id="button" onClick={() => setGame(initialState)}>
+      <button
+        id="resetButton"
+        onClick={() => {
+          setGame(initialState);
+          setO(false);
+        }}
+      >
         Reset Game
       </button>
-      <br />
       <div className="fc-aqua fw-600">Raghad Al Samrout</div>
     </div>
   );
