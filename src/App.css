@@ -23,7 +23,7 @@ code {
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
-  background-color: #010038;
+  background-color: #0f0d3c;
   color: white;
   justify-content: center;
   align-items: center;
@@ -42,13 +42,13 @@ code {
   min-height: 200px;
   font-size: 64px;
   text-align: center;
-  color: #537ec5;
+  color: #0dcaf0;
   font-weight: bolder;
   padding: 30px;
 }
 
 .fc-aqua {
-  color: #1cdbf5;
+  color: #0dcaf0;
 }
 
 .fw-600 {

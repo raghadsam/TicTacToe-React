@@ -16,19 +16,18 @@ export default function Game() {
     strings[index] = O ? "O" : "X";
     setGame(strings);
     setO(!O);
-    console.log(O);
   };
 
   useEffect(() => {
     const winner = isWinner();
     if (winner === "X") {
-      alert(`Ta Da ! ${names.state.firstPlayer} has won the game !`);
+      alert(`Bravo ! ${names.state.firstPlayer} is the WINNER !`);
 
       setO(false);
 
       setGame(initialState);
     } else if (winner === "O") {
-      alert(`Ta Da ! ${names.state.secondPlayer} has won the game !`);
+      alert(`Bravo ! ${names.state.secondPlayer} is the WINNER !`);
       setGame(initialState);
     }
   }, [game]);
