@@ -29,7 +29,7 @@ export default function Background() {
         how={50}
         time={8}
         size={"90px"}
-        background={"#131a28"}
+        background={"#0f0d3c"}
       />
     </div>
   );
