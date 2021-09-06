@@ -3,7 +3,7 @@ import "../App.css";
 import Squares from "./Squares";
 import { useLocation } from "react-router-dom";
 import Alert from "./Alert";
-
+import { Button } from "react-bootstrap";
 const initialState = ["", "", "", "", "", "", "", "", ""];
 
 export default function Game() {
@@ -55,7 +55,7 @@ export default function Game() {
 
   return (
     <div className="app-header">
-      <p className="heading-text">React Tic Tac Toe</p>
+      <p className="heading-text">Have fun 😍🔥 </p>
       <div className="rows jc-Center">
         <Squares
           className="b-bottom-right"
@@ -103,15 +103,16 @@ export default function Game() {
         />
         <Squares state={game[8]} onClick={() => handleClick(8)} />
       </div>
-      <button
+      <Button
         id="resetButton"
         onClick={() => {
           setGame(initialState);
           setO(false);
         }}
+        variant="outline-info"
       >
         Reset Game
-      </button>
+      </Button>
       <div className="fc-aqua fw-600">Raghad Al Samrout</div>
     </div>
   );

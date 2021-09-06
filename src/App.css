@@ -23,15 +23,15 @@ code {
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
-  background-color: #131a28;
+  background-color: #010038;
   color: white;
   justify-content: center;
   align-items: center;
 }
 
 .heading-text {
-  color: white;
-  font-size: 42px;
+  color: #f39422;
+  font-size: 35px;
   font-weight: bolder;
   text-align: center;
   margin: 30px;
@@ -42,7 +42,7 @@ code {
   min-height: 200px;
   font-size: 64px;
   text-align: center;
-  color: #1cdbf5;
+  color: #537ec5;
   font-weight: bolder;
   padding: 30px;
 }
@@ -70,35 +70,29 @@ code {
 }
 
 .b-bottom-right {
-  border-right: 15px solid #1cdbf5;
-  border-bottom: 15px solid #1cdbf5;
+  border-right: 15px solid #537ec5;
+  border-bottom: 15px solid #537ec5;
 }
 
 .b-bottom {
-  border-bottom: 15px solid #1cdbf5;
+  border-bottom: 15px solid #537ec5;
 }
 
 .b-right {
-  border-right: 15px solid #1cdbf5;
+  border-right: 15px solid #537ec5;
 }
 
-#resetButton {
+#resetButton,
+#submitButton {
   width: max-content;
   margin: 25px auto 10px auto;
-  background-color: #749cf1;
-  border-color: #749cf1;
-  color: black;
   border-radius: 0.25rem;
   font-weight: bolder;
 }
 #submitButton {
-  width: max-content;
-  margin: 40px auto 10px auto;
-  background-color: #749cf1;
-  border-color: #749cf1;
+  background-color: #8ab3f6;
+  border-color: #8ab3f6;
   color: black;
-  border-radius: 0.25rem;
-  font-weight: bolder;
 }
 
 #enterNames {
@@ -113,8 +107,8 @@ code {
 }
 @media only screen and (max-width: 600px) {
   .heading-text {
-    color: white;
-    font-size: 30px;
+    color: #f39422;
+    font-size: 23px;
     font-weight: bolder;
     text-align: center;
     margin: 30px;
@@ -132,25 +126,28 @@ code {
   }
 
   .b-bottom-right {
-    border-right: 10px solid #1cdbf5;
-    border-bottom: 10px solid #1cdbf5;
+    border-right: 10px solid #537ec5;
+    border-bottom: 10px solid #537ec5;
   }
 
   .b-bottom {
-    border-bottom: 10px solid #1cdbf5;
+    border-bottom: 10px solid #537ec5;
   }
 
   .b-right {
-    border-right: 10px solid #1cdbf5;
+    border-right: 10px solid #537ec5;
   }
 
-  #button {
+  #resetButton,
+  #submitButton {
     width: max-content;
     margin: 40px auto 10px auto;
-    background-color: #749cf1;
-    border-color: #749cf1;
-    color: black;
     border-radius: 0.25rem;
     font-weight: bolder;
+  }
+  #submitButton {
+    background-color: #8ab3f6;
+    border-color: #8ab3f6;
+    color: black;
   }
 }
