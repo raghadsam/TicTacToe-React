@@ -124,9 +124,10 @@ code {
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
-  font-size: 19px;
+  font-size: 22px;
   color: white;
 }
+
 @media only screen and (max-width: 600px) {
   .heading-text {
     color: #f39422;
@@ -171,5 +172,15 @@ code {
     background-color: #8ab3f6;
     border-color: #8ab3f6;
     color: black;
+  }
+  #enterNames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    font-size: 19px;
+    color: white;
   }
 }

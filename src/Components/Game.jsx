@@ -22,13 +22,13 @@ export default function Game() {
   useEffect(() => {
     const winner = isWinner();
     if (winner === "X") {
-      setShow(true);
       setWinnerName(names.state.firstPlayer);
+      setShow(true);
       setO(false);
       setGame(initialState);
     } else if (winner === "O") {
-      setShow(true);
       setWinnerName(names.state.secondPlayer);
+      setShow(true);
       setGame(initialState);
     }
   }, [game]);
@@ -66,6 +66,7 @@ export default function Game() {
           </div>
         </Alert>
       ) : null}
+
       <p className="heading-text">Have fun 😍🔥 </p>
       <div className="rows jc-Center">
         <Squares

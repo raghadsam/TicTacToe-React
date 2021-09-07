@@ -17,28 +17,26 @@ export default function Forms() {
         secondPlayer: secondPlayer,
       },
     });
-    console.log(firstPlayer);
-    console.log(secondPlayer);
   };
 
   return (
-    <div id="enterNames">
+    <div id="enterNames" className="container">
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 col-11">
-          <Form.Label>Please enter the name of the first player:</Form.Label>
+          <Form.Label>Please enter the name of player X: </Form.Label>
           <Form.Control
             type="text"
-            placeholder="First Player"
+            placeholder="Player X"
             onChange={(e) => setFirst(e.target.value)}
             required
           />
         </Form.Group>
 
         <Form.Group className="mb-3 col-11">
-          <Form.Label>Please enter the name of the second player:</Form.Label>
+          <Form.Label>Please enter the name of player O:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Second Player"
+            placeholder="Player O"
             onChange={(e) => setSecond(e.target.value)}
             required
           />
