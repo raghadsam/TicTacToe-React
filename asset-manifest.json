@@ -1,20 +1,32 @@
 {
   "files": {
-    "main.css": "/TicTacToe-React/static/css/main.7b10b7ba.chunk.css",
-    "main.js": "/TicTacToe-React/static/js/main.268aeaf5.chunk.js",
-    "main.js.map": "/TicTacToe-React/static/js/main.268aeaf5.chunk.js.map",
+    "main.css": "/TicTacToe-React/static/css/main.1c0420a4.chunk.css",
+    "main.js": "/TicTacToe-React/static/js/main.aa4b6fcc.chunk.js",
+    "main.js.map": "/TicTacToe-React/static/js/main.aa4b6fcc.chunk.js.map",
     "runtime-main.js": "/TicTacToe-React/static/js/runtime-main.6ae28d34.js",
     "runtime-main.js.map": "/TicTacToe-React/static/js/runtime-main.6ae28d34.js.map",
-    "static/js/2.a395a4c3.chunk.js": "/TicTacToe-React/static/js/2.a395a4c3.chunk.js",
-    "static/js/2.a395a4c3.chunk.js.map": "/TicTacToe-React/static/js/2.a395a4c3.chunk.js.map",
+    "static/css/2.818011ed.chunk.css": "/TicTacToe-React/static/css/2.818011ed.chunk.css",
+    "static/js/2.86a6bdc1.chunk.js": "/TicTacToe-React/static/js/2.86a6bdc1.chunk.js",
+    "static/js/2.86a6bdc1.chunk.js.map": "/TicTacToe-React/static/js/2.86a6bdc1.chunk.js.map",
     "index.html": "/TicTacToe-React/index.html",
-    "static/css/main.7b10b7ba.chunk.css.map": "/TicTacToe-React/static/css/main.7b10b7ba.chunk.css.map",
-    "static/js/2.a395a4c3.chunk.js.LICENSE.txt": "/TicTacToe-React/static/js/2.a395a4c3.chunk.js.LICENSE.txt"
+    "static/css/2.818011ed.chunk.css.map": "/TicTacToe-React/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.1c0420a4.chunk.css.map": "/TicTacToe-React/static/css/main.1c0420a4.chunk.css.map",
+    "static/js/2.86a6bdc1.chunk.js.LICENSE.txt": "/TicTacToe-React/static/js/2.86a6bdc1.chunk.js.LICENSE.txt",
+    "static/media/1.b7d3de66.png": "/TicTacToe-React/static/media/1.b7d3de66.png",
+    "static/media/10.39cb3d8d.png": "/TicTacToe-React/static/media/10.39cb3d8d.png",
+    "static/media/2.f37da474.png": "/TicTacToe-React/static/media/2.f37da474.png",
+    "static/media/3.89d1a192.png": "/TicTacToe-React/static/media/3.89d1a192.png",
+    "static/media/5.e70fa578.png": "/TicTacToe-React/static/media/5.e70fa578.png",
+    "static/media/6.5eed89b7.png": "/TicTacToe-React/static/media/6.5eed89b7.png",
+    "static/media/7.c90460d3.png": "/TicTacToe-React/static/media/7.c90460d3.png",
+    "static/media/8.9d0a9f89.png": "/TicTacToe-React/static/media/8.9d0a9f89.png",
+    "static/media/9.ad9f88a2.png": "/TicTacToe-React/static/media/9.ad9f88a2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6ae28d34.js",
-    "static/js/2.a395a4c3.chunk.js",
-    "static/css/main.7b10b7ba.chunk.css",
-    "static/js/main.268aeaf5.chunk.js"
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.86a6bdc1.chunk.js",
+    "static/css/main.1c0420a4.chunk.css",
+    "static/js/main.aa4b6fcc.chunk.js"
   ]
 }
