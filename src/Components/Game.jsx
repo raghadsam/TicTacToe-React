@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import Squares from "./Squares";
 import { useLocation } from "react-router-dom";
-import Alert from "./Alert";
-import { Button } from "react-bootstrap";
+import { Alert, Button } from "react-bootstrap";
 const initialState = ["", "", "", "", "", "", "", "", ""];
 
 export default function Game() {
   const [game, setGame] = useState(initialState);
   const [O, setO] = useState(false);
   const names = useLocation();
+  const [show, setShow] = useState(false);
+  const [winnerName, setWinnerName] = useState("");
 
   const handleClick = (index) => {
     let strings = Array.from(game);
@@ -21,13 +22,13 @@ export default function Game() {
   useEffect(() => {
     const winner = isWinner();
     if (winner === "X") {
-      alert(`Bravo ! ${names.state.firstPlayer} is the WINNER !`);
-
+      setShow(true);
+      setWinnerName(names.state.firstPlayer);
       setO(false);
-
       setGame(initialState);
     } else if (winner === "O") {
-      alert(`Bravo ! ${names.state.secondPlayer} is the WINNER !`);
+      setShow(true);
+      setWinnerName(names.state.secondPlayer);
       setGame(initialState);
     }
   }, [game]);
@@ -54,6 +55,17 @@ export default function Game() {
 
   return (
     <div className="app-header">
+      {show ? (
+        <Alert variant="danger" id="alert">
+          Bravo ! {winnerName} is the WINNER !
+          <hr />
+          <div id="alertButtonPosition">
+            <button id="alertButton" onClick={() => setShow(false)}>
+              Close me y'all!
+            </button>
+          </div>
+        </Alert>
+      ) : null}
       <p className="heading-text">Have fun 😍🔥 </p>
       <div className="rows jc-Center">
         <Squares

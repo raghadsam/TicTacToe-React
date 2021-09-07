@@ -34,12 +34,12 @@ code {
   font-size: 35px;
   font-weight: bolder;
   text-align: center;
-  margin: 30px;
+  margin: 25px;
 }
 
 .square {
-  min-width: 200px;
-  min-height: 200px;
+  min-width: 170px;
+  min-height: 171px;
   font-size: 64px;
   text-align: center;
   color: #0dcaf0;
@@ -95,6 +95,28 @@ code {
   color: black;
 }
 
+#alert {
+  position: absolute;
+  padding: 4rem 4rem;
+  font-size: 30px;
+}
+
+#alertButton {
+  color: #842029;
+  border-color: #a72d37;
+  background-color: #f8d7da;
+  border-radius: 0.25rem;
+}
+#alertButton:hover {
+  border-color: #fc959d;
+  background-color: #fc959d;
+  border-radius: 0.25rem;
+}
+#alertButtonPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #enterNames {
   display: flex;
   justify-content: center;
@@ -115,8 +137,8 @@ code {
   }
 
   .square {
-    min-width: 170px;
-    min-height: 170px;
+    min-width: 150px;
+    min-height: 150px;
     font-size: 32px;
     font-weight: bolder;
     padding: 15px;
